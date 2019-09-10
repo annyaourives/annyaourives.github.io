@@ -26,6 +26,21 @@ body {
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
+@font-face {
+    font-family: 'Eurofurence';
+    src: url('font/eurof55.ttf');
+}
+
+@font-face {
+    font-family: 'EurofurenceB';
+    src: url('font/eurof75.ttf');
+}
+
+@font-face {
+    font-family: 'EurofurenceI';
+    src: url('font/eurof56.ttf');
+}
+
 /*
     Page Content
 ------------------------------------------*/
@@ -179,7 +194,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     border:1px solid #FCC351;
     color: #FCC351;
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
-    width: 40px;
+    width: 60px;
     height: 40px;
     border-radius: 10px 10px 10px 10px;
     font-size: 30px;
@@ -231,8 +246,11 @@ h1 {
     line-height: 4rem;
 }
 h2 {
-    font-size: 2.5rem;
+    font-family: "EurofurenceI";
+    font-size: 25px;
+    color: #D7263D;
     line-height: 3rem;
+    margin-bottom: 0px;
 }
 h3 {
     font-size: 30px;
@@ -263,6 +281,12 @@ p:last-child {
     font-weight: normal;
 }
 
+.form-check-labelB{
+    color:#fff;
+    font-size: 25px;
+    font-weight: normal;
+}
+
 form {
     max-width: 150px;
     width: 300px;
@@ -287,7 +311,13 @@ form {
     margin-top: 20px;
 }
 
-
+.line_2{
+    height: 1px;
+    clear: both;
+    overflow: hidden;
+    background-color: #D7263D;
+    margin-top: 0px;
+}
 
 /*
 Section
@@ -662,8 +692,8 @@ textarea::-ms-input-placeholder{
 
 .culmn .tituloSessao h1{
     text-align: center;
-    font-family: "Dancing in the Beat";
-    font-size: 50px;
+    font-family: 'EurofurenceB';
+    font-size: 40px;
     color: #D7263D;
     padding-top: 5px;
 }
@@ -671,6 +701,7 @@ textarea::-ms-input-placeholder{
 .culmn .tituloSessao h4{
     text-align: center;
     font-family: "Eurofurence";
+    font-weight: italic;
     font-size: 30px;
     color: #D7263D;
     padding-top: 0px;
@@ -736,7 +767,6 @@ textarea::-ms-input-placeholder{
     height: 25px;
     background-color: #FCC351;
     float: left;
-
 }
 
 
@@ -914,12 +944,12 @@ Home Section style
 
 .work_container .slick-arrow ,
 .main_home .slick-arrow{
-    font-size:3rem;
+    font-size:4rem;
     color:#FCC351;
     top:30%;
     position: absolute;
     z-index: 90;
-    cursor: pointer;  
+    cursor: pointer;
 }
 .main_home .nextprevleft{
     left:-3%;
@@ -1318,7 +1348,7 @@ work Section style
 .widget_brand a{
     font-size:30px;
     font-weight: 800;
-    color:##D7263D;
+    color: #D7263D;
 }
 .widget_newsletter li a i{
     color:#aaa;
@@ -1351,8 +1381,16 @@ work Section style
     height: auto;
 }
 
+.svg4{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .botaum {
-    margin-left: 800px;
+    align-items: center;
 }
 
 .voltar {
@@ -1369,4 +1407,15 @@ label{
     font-size: 30px;
     color: #fff;
     font-weight: normal;
+}
+
+.tituloSub{
+    color: #FCC351;
+}
+
+.line_3{
+    height: 2px;
+    width: 30px;
+    background-color: #FCC351;
+    margin-top: 0px;
 }
