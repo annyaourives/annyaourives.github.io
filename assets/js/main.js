@@ -59,10 +59,17 @@ jQuery(document).ready(function ($) {
         infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        draggable: false,
         arrows: true,
         prevArrow: "<i class='icon icon-chevron-left nextprevleft'></i>",
         nextArrow: "<i class='icon icon-chevron-right nextprevright'></i>",
     });
+
+    $('a[data-slide]').click(function(e) {
+        e.preventDefault();
+        var slideno = $(this).data('slide');
+        $('.hello_slid').slick('slickGoTo', slideno - 1);
+      });
     
     
     

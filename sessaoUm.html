@@ -15,7 +15,15 @@
 
         <!--Google Font link-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+<!-- 
+        <style>    
+            #map {
+                position: unset !important;
+                /*overflow: initial !important;*/
+                width: 100%;
+                height: 100%;
+            }
+        </style> -->
 
         <link rel="stylesheet" href="assets/css/slick/slick.css"> 
         <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
@@ -73,10 +81,10 @@
                                 <div class="hello_slid">
                                     <div class="slid_item01">
                                         <div classa="home_text">
-                                            <h3>&nbsp&nbsp&nbspEsta seção inclui as atividades que você faz no seu serviço, que incluem trabalho remunerado ou
+                                            <h3>Esta seção inclui as atividades que você faz no seu serviço, que incluem trabalho remunerado ou
                                             voluntário, as atividades na escola ou faculdade e outro tipo de trabalho não remunerado fora da sua
                                             casa.</h3> 
-                                            <h3>&nbsp&nbsp&nbspNÃO incluir trabalho não remunerado que você faz na sua casa como tarefas domésticas,
+                                            <h3>NÃO incluir trabalho não remunerado que você faz na sua casa como tarefas domésticas,
                                             cuidar do jardim e da casa ou tomar conta da sua família.</h3>
                                         </div>
                                         <a><img class="svg3" src="assets/images/fundo01/01.svg" alt=""></a>
@@ -87,42 +95,48 @@
                                         <div classa="home_text">
                                             <h3>Atualmente você trabalha ou faz trabalho voluntário fora de sua casa?</h3>
                                         </div>
+
+                                        <form name="formS01p01">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
+                                            <input class="form-check-input" type="radio" name="trabalha" id="exampleRadios1" value="sim">
                                                 <label class="form-check-label" for="exampleRadios1">
                                                       Sim
                                                 </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                                            <input class="form-check-input" type="radio" name="trabalha" id="exampleRadios2" value="nao">
                                             <label class="form-check-label" for="exampleRadios2">
                                                 Não
                                             </label>
                                         </div>
+                                    </form>
+
                                         <a><img class="svg3" src="assets/images/fundo01/02.svg" alt=""></a>
                                     </div><!-- End off slid item -->
 
                                     <div class="slid_item">
-
+                                        <h3>Marque no mapa a região onde trabalha.</h3>
                                        <!-- MAPA -->
+                                        <div style="width: 84%; left: 8%; height: 400px;" id="map"></div>
 
                                     </div><!-- End off slid item -->
 
                                     <div class="slid_item">
                                         <a><img class="svg3" src="assets/images/etapas/status01.svg" alt=""></a>
-                                        <h3>&nbsp&nbsp&nbspAs próximas questões são em relação a toda a atividade física que você fez na última semana como
+                                        <h3>As próximas questões são em relação a toda a atividade física que você fez na última semana como
                                         parte do seu trabalho remunerado ou não remunerado.</h3>
-                                        <h3>&nbsp&nbsp&nbspNÃO inclua o transporte para o trabalho.</h3>
-                                        <h3>&nbsp&nbsp&nbspPense unicamente nas atividades que você faz por pelo menos 10 minutos contínuos.</h3>
+                                        <h3>NÃO inclua o transporte para o trabalho.</h3>
+                                        <h3>Pense unicamente nas atividades que você faz por pelo menos 10 minutos contínuos.</h3>
                                         <a><img class="svg3" src="assets/images/fundo01/03.svg" alt=""></a>
                                     </div><!-- End off slid item -->
 
                                     <div class="slid_item">
-                                            <a><img class="svg3" src="assets/images/etapas/status02.svg" alt=""></a>
-                                        <h3>&nbsp&nbsp&nbspEm quantos dias de uma semana normal você anda, durante pelo menos 10 minutos contínuos,
+                                        <a><img class="svg3" src="assets/images/etapas/status02.svg" alt=""></a>
+                                        <h3>Em quantos dias de uma semana normal você anda, durante pelo menos 10 minutos contínuos,
                                         como parte do seu trabalho? </h3>
-                                        <h4>&nbsp&nbsp&nbspPor favor, NÃO inclua o andar como forma de transporte para ir ou voltar do trabalho.</h3>
+                                        <h4>Por favor, NÃO inclua o andar como forma de transporte para ir ou voltar do trabalho.</h3>
 
+                                        <form name="formS01p02">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
                                             <label class="form-check-label" for="inlineRadio1">1 dia&nbsp&nbsp&nbsp</label>
@@ -141,12 +155,14 @@
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="opcao5">
                                             <label class="form-check-label" for="inlineRadio5">nenhum</label>
                                         </div>
+                                        </form>
+                                        
                                         <a><img class="svg3" src="assets/images/fundo01/04.svg" alt=""></a>
                                     </div><!-- End off slid item -->
 
                                     <div class="slid_item">
                                         <a><img class="svg3" src="assets/images/etapas/status03.svg" alt=""></a>
-                                        <h3>&nbsp&nbsp&nbspQuanto tempo no total você usualmente gasta POR DIA caminhando como parte do seu trabalho?</h3>
+                                        <h3>Quanto tempo no total você usualmente gasta POR DIA caminhando como parte do seu trabalho?</h3>
                                         <form>
                                            <table>
                                                 <tr>
@@ -195,7 +211,7 @@
 
                                     <div class="slid_item">
                                         <a><img class="svg3" src="assets/images/etapas/status05.svg" alt=""></a>
-                                        <h3>&nbsp&nbsp&nbspQuanto tempo no total você usualmente gasta POR DIA fazendo atividades moderadas como
+                                        <h3>Quanto tempo no total você usualmente gasta POR DIA fazendo atividades moderadas como
                                         parte do seu trabalho?</h3>
                                         <form>
                                             <table>
@@ -223,7 +239,7 @@
 
                                     <div class="slid_item">
                                         <a><img class="svg3" src="assets/images/etapas/status06.svg" alt=""></a>
-                                        <h3>&nbsp&nbsp&nbspEm quantos dias de uma semana normal você gasta fazendo atividades vigorosas, por pelo
+                                        <h3>Em quantos dias de uma semana normal você gasta fazendo atividades vigorosas, por pelo
                                         menos 10 minutos contínuos, como trabalho de construção pesada, carregar grandes pesos,
                                         trabalhar com enxada, escavar ou subir escadas como parte do seu trabalho:</h3>
         
@@ -250,7 +266,7 @@
 
                                     <div class="slid_item">
                                         <a><img class="svg3" src="assets/images/etapas/status07.svg" alt=""></a>
-                                        <h3>&nbsp&nbsp&nbspQuanto tempo no total você usualmente gasta POR DIA fazendo atividades físicas vigorosas
+                                        <h3>Quanto tempo no total você usualmente gasta POR DIA fazendo atividades físicas vigorosas
                                         como parte do seu trabalho?</h3>
                                         <form>
                                             <table>
@@ -364,22 +380,24 @@
         </div>
 
         <!-- JS includes -->
-
+        
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
-
-        <script src="assets/js/owl.carousel.min.js"></script>
+        
+        <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
         <script src="assets/js/jquery.magnific-popup.js"></script>
         <script src="assets/js/jquery.easing.1.3.js"></script>
         <script src="assets/css/slick/slick.js"></script>
         <script src="assets/css/slick/slick.min.js"></script>
         <script src="assets/js/jquery.collapse.js"></script>
         <script src="assets/js/bootsnav.js"></script>
-
-
-
+        
+        
+        
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
 
+        <script src="assets/js/mapa1.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA881HMoL7z4WG8xPJvXNgTeywhEwxA7JQ&libraries=places,drawing&callback=initMap" async defer></script>
     </body>
 </html>
