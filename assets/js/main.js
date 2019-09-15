@@ -1,4 +1,5 @@
 "use strict";
+var $slider;
 jQuery(document).ready(function ($) {
 
 //for Preloader
@@ -54,7 +55,7 @@ jQuery(document).ready(function ($) {
 
 
 // slick slider active Home Page Tow
-    $(".hello_slid").slick({
+    $slider = $(".hello_slid").slick({
         dots: true,
         infinite: false,
         slidesToShow: 1,
@@ -62,7 +63,31 @@ jQuery(document).ready(function ($) {
         draggable: false,
         arrows: true,
         prevArrow: "<i class='icon icon-chevron-left nextprevleft'></i>",
-        nextArrow: "<i class='icon icon-chevron-right nextprevright'></i>",
+        nextArrow: "<i class='icon icon-chevron-right nextprevright' id='teste'></i>",
+        waitForAnimate: false,
+        // fnCanGoNext: function(instance, currentSlide){
+        //     console.log("aasdasd");
+        //     return false;
+        //     // console.log("fnCanGoNext called");
+            
+        //     // var currentSlide = instance.$slides.eq(currentSlide);
+        //     // var checkbox = currentSlide.find("input[type=checkbox]");
+            
+        //     // if(checkbox.is(':checked')){
+        //     //     return true; // allow to go to next
+        //     // } else {
+        //     //     return false; // cannot go to next
+        //     // }
+            
+        // },
+    });
+    $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        if(window.sliderBeforeChange)
+            sliderBeforeChange(event, slick, currentSlide, nextSlide);
+    });
+    $slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+        if(window.sliderAfterChange)
+            sliderAfterChange(event, slick, currentSlide, nextSlide);
     });
 
     $('a[data-slide]').click(function(e) {
@@ -106,6 +131,8 @@ jQuery(document).ready(function ($) {
 
 
     //End
+
+
 
 });
 

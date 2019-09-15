@@ -71,10 +71,10 @@
                         <div class="main_home text-center">
                             <div class="col-md-12">
                                 <div class="hello_slid">
-                                        <div class="slid_item">
-                                                <h3>Bem vindo a pesquisa do projeto moveIlhéus!</h3>
-                                                <a><img class="svg4" src="assets/images/idv/logoTodo.svg" alt=""></a>                            
-                                        </div><!-- End off slid item -->
+                                    <div class="slid_item">
+                                            <h3>Bem vindo a pesquisa do projeto moveIlhéus!</h3>
+                                            <a><img class="svg4" src="assets/images/idv/logoTodo.svg" alt=""></a>                            
+                                    </div><!-- End off slid item -->
 
                                     <div class="slid_item01">
                                         <div classa="home_text">
@@ -115,10 +115,13 @@
                                             Maecenas eu libero ac leo commodo aliquam. Vivamus eros sem, imperdiet bibendum eleifend non, eleifend ut magna. Nullam a ipsum imperdiet, egestas urna ut, interdum justo. Proin pharetra feugiat turpis in accumsan. Nullam quis fringilla orci, in dignissim tortor. Nullam ut metus quis nibh vestibulum molestie. Nunc dapibus sapien eu purus hendrerit sodales. Fusce condimentum sollicitudin tellus eu ullamcorper.</h3>
                                         </div>
 
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
-                                        <label class="form-check-label" for="exampleRadios1">Eu li e concordo com os termos da TCL</label>
+                                        <input class="form-check-input" type="checkbox" name="radioTCLE" id="radioTCLE" onchange="validaTCLE18Anos()">
+                                        <label class="form-check-label" for="radioTCLE">Eu li e concordo com os termos da TCL</label>
+                                        <div style="height: 2px"></div>
+                                        <input class="form-check-input" type="checkbox" name="radio18Anos" id="radio18Anos" onchange="validaTCLE18Anos()">
+                                        <label class="form-check-label" for="radio18Anos">Tenho 18 anos ou mais</label>
                                         <div style="height: 5px"></div>
-                                        <a href="sessaoUm.html"><button type="submit" class="btn btn-primary">Vamos começar!</button></a>
+                                        <a href="sessaoUm.html"><button type="submit" class="btn btn-primary" id="btnVamosComecar" disabled>Vamos começar!</button></a>
 
                                         <p>&nbsp&nbsp&nbsp</p>    
                                     </div>
@@ -211,10 +214,16 @@
         <script src="assets/js/jquery.collapse.js"></script>
         <script src="assets/js/bootsnav.js"></script>
 
-
-
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>            
+            function validaTCLE18Anos(){
+                if($("#radioTCLE").is(':checked') && $("#radio18Anos").is(':checked'))
+                    $( "#btnVamosComecar" ).prop( "disabled", false );
+                else
+                    $( "#btnVamosComecar" ).prop( "disabled", true );
+            }
+        </script>
 
     </body>
 </html>
