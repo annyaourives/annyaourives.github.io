@@ -11,6 +11,9 @@ Author URI: http://www.xpeedstudio.com
         font-size: 1rem;
     }
     
+    .slid_item{
+        width: 90%;
+    }
 
 
 
@@ -52,7 +55,9 @@ Author URI: http://www.xpeedstudio.com
         right:0%;
     }
 
-
+    .slid_item{
+        width: 90%;
+    }
 
 }
 
@@ -100,6 +105,12 @@ Author URI: http://www.xpeedstudio.com
         display: none;
     }
 
+    .slid_item{
+        width: 90%;
+    }
+
+    
+
 }
 
 
@@ -117,6 +128,11 @@ Author URI: http://www.xpeedstudio.com
         font-size:17px;
     }
 
+    .slid_item{
+        width: 90%;
+    }
+
+
 
 }
 
@@ -126,12 +142,20 @@ Author URI: http://www.xpeedstudio.com
 
 @media (max-width: 400px) {
 
+    .slid_item{
+        width: 90%;
+    }
+
 
 }
 
 @media (max-width: 320px) {
     html {
         font-size: 60.5%;
+    }
+
+    .slid_item{
+        width: 90%;
     }
 
 
