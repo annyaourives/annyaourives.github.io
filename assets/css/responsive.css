@@ -11,11 +11,27 @@ Author URI: http://www.xpeedstudio.com
         font-size: 1rem;
     }
     
-    .slid_item{
-        width: 90%;
+    .img-ali{
+        text-align: center;
     }
 
+    .text-white{
+        text-align: center;
+    }
+    
+    p{
+        text-align: center; 
+    }
 
+    .m-top-20{
+        text-align: center; 
+    }
+
+    .home_text {
+        width: 50%;
+        vertical-align: center;
+        padding-left: 50%;
+    }
 
 }
 
@@ -55,8 +71,25 @@ Author URI: http://www.xpeedstudio.com
         right:0%;
     }
 
-    .slid_item{
-        width: 90%;
+    .img-ali{
+        text-align: center;
+    }
+
+    .text-white{
+        text-align: center;
+    }
+
+    p{
+        text-align: center; 
+    }
+
+    .m-top-20{
+        text-align: center; 
+    }
+
+    .home_text {
+        width: 50%;
+        padding-left: 50%;
     }
 
 }
@@ -105,11 +138,26 @@ Author URI: http://www.xpeedstudio.com
         display: none;
     }
 
-    .slid_item{
-        width: 90%;
+    .img-ali{
+        text-align: center;
     }
 
-    
+    .text-white{
+        text-align: center;
+    }
+
+    p{
+        text-align: center; 
+    }
+
+    .m-top-20{
+        text-align: center; 
+    }
+
+    .home_text {
+        width: 50%;
+        padding-left: 50%;
+    }
 
 }
 
@@ -128,12 +176,26 @@ Author URI: http://www.xpeedstudio.com
         font-size:17px;
     }
 
-    .slid_item{
-        width: 90%;
+    .img-ali{
+        text-align: center;
     }
 
+    .text-white{
+        text-align: center;
+    }
 
+    p{
+        text-align: center; 
+    }
 
+    .m-top-20{
+        text-align: center; 
+    }
+
+    .home_text{
+        width: 50%;
+        padding-left: 50%;
+    }
 }
 
 
@@ -142,11 +204,31 @@ Author URI: http://www.xpeedstudio.com
 
 @media (max-width: 400px) {
 
-    .slid_item{
-        width: 90%;
+    .img-ali{
+        text-align: center;
     }
 
+    p{
+        text-align: center; 
+    }
 
+    .m-top-20{
+        text-align: center; 
+    }
+
+    .home_text {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .svg4{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 320px) {
@@ -154,13 +236,26 @@ Author URI: http://www.xpeedstudio.com
         font-size: 60.5%;
     }
 
-    .slid_item{
-        width: 90%;
+    .img-ali{
+        text-align: center;
     }
 
+    .text-white{
+        text-align: center;
+    }
 
+    p{
+        text-align: center; 
+    }
 
+    .m-top-20{
+        text-align: center; 
+    }
 
+    .home_text {    
+        width: 80%;
+        padding-left: 5%;
+    }
 }
 
 
