@@ -18,7 +18,7 @@ window.onerror = function(msg, url, line, col, error) {
 }
 
 function sliderBeforeChange(event, slick, currentSlide, nextSlide){
-    console.log("sliderBeforeChange");
+    console.log("sliderBeforeChange", canChange);
     if(canChange){
         errowMessage = "Erro de validação";
         parametros = {slick: slick, currentSlide: currentSlide, nextSlide: nextSlide};
@@ -28,6 +28,7 @@ function sliderBeforeChange(event, slick, currentSlide, nextSlide){
 
 function sliderAfterChange(event, slick, currentSlide, nextSlide){
     canChange = true;
+    console.log("sliderBeforeChange", canChange);
 }
 
 function validaSlide(slick, currentSlide, nextSlide){
@@ -58,7 +59,7 @@ function validaSlide(slick, currentSlide, nextSlide){
     }
 
     var elementosObrigatorios = $("#sessao"+sessao+"Slide" +currentSlide+ " > .required");
-    console.log("exigeValidacao", elementosObrigatorios.length);
+    console.log("elementosObrigatorios", elementosObrigatorios.length);
     if(elementosObrigatorios.length){
         var slideValido = true;
         elementosObrigatorios.each(function(index, element){
@@ -67,17 +68,19 @@ function validaSlide(slick, currentSlide, nextSlide){
             if(!opcao)
                 slideValido = false;
         });
+        console.log("slideValido", slideValido);
         if(slideValido){
             stack.push(currentSlide);
             $slider.slick('slickNext');
         }
         else
             canChange = true;
+        
+        return ;
     }
-
     
     var validaSimNao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .validaSimNao");
-    console.log("exigeValidacao", validaSimNao.length);
+    console.log("validaSimNao", validaSimNao.length);
     if(validaSimNao.length){
         var slideValido = true;
         var opcao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .validaSimNao > .form-check > input[name='trabalha']:checked").val();
