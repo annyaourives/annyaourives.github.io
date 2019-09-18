@@ -2,6 +2,7 @@
 
 var map;
 var marcado = false;
+var overlays = [];
       
 function initMap() {
     console.log("initMap");
@@ -26,7 +27,7 @@ function initMap() {
     
     google.maps.event.addListener(map, 'click', function( event ){
         if(!marcado){
-            var cityCircle = new google.maps.Circle({
+            var houseCircle = new google.maps.Circle({
                 strokeColor: '#FF0000',
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
@@ -38,6 +39,7 @@ function initMap() {
                 radius: 100
             });
             marcado = true;
+            overlays.push(houseCircle);
         }
     });
 }

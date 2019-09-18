@@ -79,6 +79,22 @@ function validaSlide(slick, currentSlide, nextSlide){
         return ;
     }
     
+    var selectValidacao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredSelect");
+    console.log("selectValidacao", selectValidacao.length);
+    if(selectValidacao.length){
+        var horas = $("#selectS"+sessao +"S"+currentSlide+"S"+0).val();
+        var minutos = $("#selectS"+sessao +"S"+currentSlide+"S"+1).val();
+        console.log("slideValido", horas, minutos);
+        if((horas != "-1" && minutos != "-1") && (horas != "0" || minutos != "0") && (horas != "24" || minutos == "0")){
+            stack.push(currentSlide);
+            $slider.slick('slickNext');
+        }
+        else
+            canChange = true;
+        
+        return ;
+    }
+
     var validaSimNao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .validaSimNao");
     console.log("validaSimNao", validaSimNao.length);
     if(validaSimNao.length){
@@ -94,9 +110,71 @@ function validaSlide(slick, currentSlide, nextSlide){
         }
         else
             canChange = true;
+        
+        return ;
     }
-    else{
-        stack.push(currentSlide);
-        $slider.slick('slickNext');
+
+    var validaForm1 = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredForm1");
+    console.log("validaForm1", validaForm1.length);
+    if(validaForm1.length){
+        var nome = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredForm1 > #inputNome").val();
+        var email = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredForm1 > #inputEmail").val();
+        var idade = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredForm1 > #inputIdade").val();
+        var sexo = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredForm1 > input[name='radioSexo']:checked").val();
+        console.log("opcao", nome, email, parseInt(idade), sexo);
+        if(nome && email && parseInt(idade) && sexo){
+            stack.push(currentSlide);
+            $slider.slick('slickNext');
+        }
+        else
+            canChange = true;
+
+        return ;
     }
+
+    var validaForm2 = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredForm2");
+    console.log("validaForm2", validaForm2.length);
+    if(validaForm2.length){
+        var rendaFamiliar = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredForm2 > #selectRendaFamiliar").val();
+        var nivelEscolaridade = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredForm2 > #selectNivelEscolaridade").val();
+        console.log("opcao", rendaFamiliar, nivelEscolaridade);
+        if(rendaFamiliar != "-1" && nivelEscolaridade != "-1"){
+            stack.push(currentSlide);
+            $slider.slick('slickNext');
+        }
+        else
+            canChange = true;
+
+        return ;
+    }
+
+    var validamapa = $("#sessao"+sessao+"Slide" +currentSlide+ " > #map");
+    console.log("validamapa", validamapa.length);
+    if(validamapa.length){
+        var peloMenosUmLocal = overlays.find(function(marcacao){
+            return marcacao.getMap();
+        })
+        console.log("peloMenosUmLocal", peloMenosUmLocal);
+        if(peloMenosUmLocal){
+            stack.push(currentSlide);
+            $slider.slick('slickNext');
+        }
+        else
+            canChange = true;
+
+        return ;
+    }
+
+    stack.push(currentSlide);
+    $slider.slick('slickNext');        
 }
+
+$("input").change(function(){
+    console.log("marcou");
+    validaSlide(undefined, $slider.slick("slickCurrentSlide"), $slider.slick("slickCurrentSlide")+1);
+})
+
+$("select").change(function(){
+    console.log("marcou");
+    validaSlide(undefined, $slider.slick("slickCurrentSlide"), $slider.slick("slickCurrentSlide")+1);
+})
