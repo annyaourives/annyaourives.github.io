@@ -30,13 +30,16 @@
                 height: 100%;
             }
         </style> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-material-datetimepicker.css"> -->
+
 
     <link rel="stylesheet" href="assets/css/slick/slick.css">
     <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/iconfont.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/bootsnav.css">
 
@@ -79,6 +82,7 @@
         <section id="home" class="home bg-black fix">
 
             <div class="container">
+                <input type="text" id="time" class="form-control" data-dtp="dtp_iAwHh">
                 <div class="row">
                     <div class="main_home text-center">
                         <div class="col-md-12">
@@ -105,14 +109,14 @@
 
                                     <form name="formS01p01" class="validaSimNao">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="trabalha" id="S1S1R1"
-                                                value="sim">
+                                            <input class="form-check-input" type="radio" name="ipac_1a" id="S1S1R1"
+                                                value="true">
                                             <label class="form-check-label" for="S1S1R1">
                                                 Sim
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="radio" name="trabalha" id="S1S1R2"
-                                                value="nao">
+                                            <input class="form-check-input" type="radio" name="ipac_1a" id="S1S1R2"
+                                                value="false">
                                             <label class="form-check-label" for="S1S1R2">
                                                 Não
                                             </label>
@@ -166,30 +170,30 @@
                                     <h4>Por favor, NÃO inclua o andar como forma de transporte para ir ou voltar do
                                         trabalho.</h3>
 
-                                        <div class="form-check form-check-inline validaNenhum">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="S1S4R1" value="opcao1">
+                                        <div class="form-check form-check-inline validaNenhum" data-name="ipac_1b">
+                                            <input class="form-check-input" type="radio" name="ipac_1b"
+                                                id="S1S4R1" value="1">
                                             <label class="form-check-label" for="S1S4R1">1 dia&nbsp&nbsp&nbsp</label>
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="S1S4R2" value="opcao2">
+                                            <input class="form-check-input" type="radio" name="ipac_1b"
+                                                id="S1S4R2" value="2">
                                             <label class="form-check-label" for="S1S4R2">2 dias&nbsp&nbsp&nbsp</label>
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="S1S4R3" value="opcao3">
+                                            <input class="form-check-input" type="radio" name="ipac_1b"
+                                                id="S1S4R3" value="3">
                                             <label class="form-check-label" for="S1S4R3">3 dias&nbsp&nbsp&nbsp</label>
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="S1S4R4" value="opcao4">
+                                            <input class="form-check-input" type="radio" name="ipac_1b"
+                                                id="S1S4R4" value="4">
                                             <label class="form-check-label" for="S1S4R4">4 dias&nbsp&nbsp&nbsp</label>
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="S1S4R5" value="opcao5">
+                                            <input class="form-check-input" type="radio" name="ipac_1b"
+                                                id="S1S4R5" value="5">
                                             <label class="form-check-label" for="S1S4R5">5 dias&nbsp&nbsp&nbsp</label>
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="S1S4R6" value="opcao6">
+                                            <input class="form-check-input" type="radio" name="ipac_1b"
+                                                id="S1S4R6" value="6">
                                             <label class="form-check-label" for="S1S4R6">6 dias&nbsp&nbsp&nbsp</label>
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="S1S4R7" value="opcao7">
+                                            <input class="form-check-input" type="radio" name="ipac_1b"
+                                                id="S1S4R7" value="7">
                                             <label class="form-check-label" for="S1S4R7">7 dias&nbsp&nbsp&nbsp</label>
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="S1S4R0" value="opcao0">
+                                            <input class="form-check-input" type="radio" name="ipac_1b"
+                                                id="S1S4R0" value="0">
                                             <label class="form-check-label" for="S1S4R0">nenhum</label>
                                         </div>
 
@@ -202,8 +206,8 @@
                                         trabalho?</h3>
                                     <p></p>
                                     <p></p>
-                                    <div class="ls-custom-select requiredSelect">
-                                        <select class="ls-select" id="selectS1S5S0">
+                                    <div class="ls-custom-select requiredSelect" data-id="ipac_1c_h">
+                                        <select class="ls-select" id="ipac_1c_h">
                                             <option value="-1" selected> Selecione as horas </option>
                                             <option value="0"> 0 hora </option>
                                             <option value="1"> 1 hora </option>
@@ -234,8 +238,8 @@
                                     </div>
                                     <p></p>
                                     <p></p>
-                                    <div class="ls-custom-select requiredSelect">
-                                        <select class="ls-select" id="selectS1S5S1">
+                                    <div class="ls-custom-select requiredSelect" data-id="ipac_1c_m">
+                                        <select class="ls-select" id="ipac_1c_m">
                                             <option value="-1" selected> Selecione os minutos </option>
                                             <option value="0"> 00 minutos </option>
                                             <option value="10"> 10 minutos </option>
@@ -254,30 +258,30 @@
                                         menos 10
                                         minutos contínuos, como carregar pesos leves como parte do seu trabalho? </h3>
 
-                                    <div class="form-check form-check-inline validaNenhum">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S6R1" value="opcao1">
+                                    <div class="form-check form-check-inline validaNenhum" data-name="ipac_1d">
+                                        <input class="form-check-input" type="radio" name="ipac_1d"
+                                            id="S1S6R1" value="1">
                                         <label class="form-check-label" for="S1S6R1">1 dia&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S6R2" value="opcao2">
+                                        <input class="form-check-input" type="radio" name="ipac_1d"
+                                            id="S1S6R2" value="2">
                                         <label class="form-check-label" for="S1S6R2">2 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S6R3" value="opcao3">
+                                        <input class="form-check-input" type="radio" name="ipac_1d"
+                                            id="S1S6R3" value="3">
                                         <label class="form-check-label" for="S1S6R3">3 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S6R4" value="opcao4">
-                                        <label class="form-check-label" for="S1S6R4">6 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S6R5" value="opcao5">
+                                        <input class="form-check-input" type="radio" name="ipac_1d"
+                                            id="S1S6R4" value="4">
+                                        <label class="form-check-label" for="S1S6R4">4 dias&nbsp&nbsp&nbsp</label>
+                                        <input class="form-check-input" type="radio" name="ipac_1d"
+                                            id="S1S6R5" value="5">
                                         <label class="form-check-label" for="S1S6R5">5 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S6R6" value="opcao6">
+                                        <input class="form-check-input" type="radio" name="ipac_1d"
+                                            id="S1S6R6" value="6">
                                         <label class="form-check-label" for="S1S6R6">6 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S6R7" value="opcao7">
+                                        <input class="form-check-input" type="radio" name="ipac_1d"
+                                            id="S1S6R7" value="7">
                                         <label class="form-check-label" for="S1S6R7">7 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S6R0" value="opcao0">
+                                        <input class="form-check-input" type="radio" name="ipac_1d"
+                                            id="S1S6R0" value="0">
                                         <label class="form-check-label" for="S1S6R0">nenhum</label>
                                     </div>
 
@@ -291,8 +295,8 @@
                                         parte do seu trabalho?</h3>
                                     <p></p>
                                     <p></p>
-                                    <div class="ls-custom-select requiredSelect">
-                                        <select class="ls-select" id="selectS1S7S0">
+                                    <div class="ls-custom-select requiredSelect" data-id="ipac_1e_h">
+                                        <select class="ls-select" id="ipac_1e_h">
                                             <option value="-1" selected> Selecione as horas </option>
                                             <option value="0"> 0 hora </option>
                                             <option value="1"> 1 hora </option>
@@ -323,8 +327,8 @@
                                     </div>
                                     <p></p>
                                     <p></p>
-                                    <div class="ls-custom-select requiredSelect">
-                                        <select class="ls-select" id="selectS1S7S1">
+                                    <div class="ls-custom-select requiredSelect" data-id="ipac_1e_m">
+                                        <select class="ls-select" id="ipac_1e_m">
                                             <option value="-1" selected> Selecione os minutos </option>
                                             <option value="0"> 00 minutos </option>
                                             <option value="10"> 10 minutos </option>
@@ -345,30 +349,30 @@
                                         pesos,
                                         trabalhar com enxada, escavar ou subir escadas como parte do seu trabalho:</h3>
 
-                                    <div class="form-check form-check-inline validaNenhum">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S8R1" value="opcao1">
+                                    <div class="form-check form-check-inline validaNenhum" data-name="ipac_1f">
+                                        <input class="form-check-input" type="radio" name="ipac_1f"
+                                            id="S1S8R1" value="1">
                                         <label class="form-check-label" for="S1S8R1">1 dia&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S8R2" value="opcao2">
+                                        <input class="form-check-input" type="radio" name="ipac_1f"
+                                            id="S1S8R2" value="2">
                                         <label class="form-check-label" for="S1S8R2">2 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S8R3" value="opcao3">
+                                        <input class="form-check-input" type="radio" name="ipac_1f"
+                                            id="S1S8R3" value="3">
                                         <label class="form-check-label" for="S1S8R3">3 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S8R4" value="opcao4">
-                                        <label class="form-check-label" for="S1S8R4">6 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S8R5" value="opcao5">
+                                        <input class="form-check-input" type="radio" name="ipac_1f"
+                                            id="S1S8R4" value="4">
+                                        <label class="form-check-label" for="S1S8R4">4 dias&nbsp&nbsp&nbsp</label>
+                                        <input class="form-check-input" type="radio" name="ipac_1f"
+                                            id="S1S8R5" value="5">
                                         <label class="form-check-label" for="S1S8R5">5 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S8R6" value="opcao6">
+                                        <input class="form-check-input" type="radio" name="ipac_1f"
+                                            id="S1S8R6" value="6">
                                         <label class="form-check-label" for="S1S8R6">6 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S8R7" value="opcao7">
+                                        <input class="form-check-input" type="radio" name="ipac_1f"
+                                            id="S1S8R7" value="7">
                                         <label class="form-check-label" for="S1S8R7">7 dias&nbsp&nbsp&nbsp</label>
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="S1S8R0" value="opcao0">
+                                        <input class="form-check-input" type="radio" name="ipac_1f"
+                                            id="S1S8R0" value="0">
                                         <label class="form-check-label" for="S1S8R0">nenhum</label>
                                     </div>
 
@@ -382,8 +386,8 @@
                                         como parte do seu trabalho?</h3>
                                     <p></p>
                                     <p></p>
-                                    <div class="ls-custom-select requiredSelect">
-                                        <select class="ls-select" id="selectS1S9S0">
+                                    <div class="ls-custom-select requiredSelect" data-id="ipac_1g_h">
+                                        <select class="ls-select" id="ipac_1g_h">
                                             <option value="-1" selected> Selecione as horas </option>
                                             <option value="0"> 0 hora </option>
                                             <option value="1"> 1 hora </option>
@@ -414,8 +418,8 @@
                                     </div>
                                     <p></p>
                                     <p></p>
-                                    <div class="ls-custom-select requiredSelect">
-                                        <select class="ls-select" id="selectS1S9S1">
+                                    <div class="ls-custom-select requiredSelect" data-id="ipac_1g_m">
+                                        <select class="ls-select" id="ipac_1g_m">
                                             <option value="-1" selected> Selecione os minutos </option>
                                             <option value="0"> 00 minutos </option>
                                             <option value="10"> 10 minutos </option>
@@ -544,6 +548,7 @@
     <!-- JS includes -->
 
     <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
     <script src="assets/js/vendor/bootstrap.min.js"></script>
 
     <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
@@ -553,13 +558,16 @@
     <script src="assets/css/slick/slick.min.js"></script>
     <script src="assets/js/jquery.collapse.js"></script>
     <script src="assets/js/bootsnav.js"></script>
-
+<!-- 
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/bootstrap-material-datetimepicker.js"></script> -->
 
 
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         var sessao = "1";
+        $('#time').bootstrapMaterialDatePicker({ date: false }); 
     </script>
     <script src="assets/js/transitions.js"></script>
 

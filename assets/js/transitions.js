@@ -42,9 +42,10 @@ function validaSlide(slick, currentSlide, nextSlide){
     var exigeValidacao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .validaNenhum");
     console.log("exigeValidacao", exigeValidacao.length);
     if(exigeValidacao.length){
-        var opcao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .form-check > input[name='inlineRadioOptions']:checked").val();
-        console.log("opcao", opcao);
-        if(opcao == "opcao0"){
+        var element = $("#sessao"+sessao+"Slide" +currentSlide+ " > .form-check");
+        var opcao =  $(element).find("input[name='"+ element.data( "name" ) +"']:checked").val();
+        console.log("opcao", opcao, element.data( "name" ));
+        if(opcao == "0"){
             stack.push(currentSlide);
             $slider.slick('slickGoTo', currentSlide + 2);
         }
@@ -82,8 +83,8 @@ function validaSlide(slick, currentSlide, nextSlide){
     var selectValidacao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .requiredSelect");
     console.log("selectValidacao", selectValidacao.length);
     if(selectValidacao.length){
-        var horas = $("#selectS"+sessao +"S"+currentSlide+"S"+0).val();
-        var minutos = $("#selectS"+sessao +"S"+currentSlide+"S"+1).val();
+        var horas = $("#" + $(selectValidacao[0]).data("id")).val();
+        var minutos = $("#" + $(selectValidacao[1]).data("id")).val();
         console.log("slideValido", horas, minutos);
         if((horas != "-1" && minutos != "-1") && (horas != "0" || minutos != "0") && (horas != "24" || minutos == "0")){
             stack.push(currentSlide);
@@ -99,9 +100,9 @@ function validaSlide(slick, currentSlide, nextSlide){
     console.log("validaSimNao", validaSimNao.length);
     if(validaSimNao.length){
         var slideValido = true;
-        var opcao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .validaSimNao > .form-check > input[name='trabalha']:checked").val();
+        var opcao = $("#sessao"+sessao+"Slide" +currentSlide+ " > .validaSimNao > .form-check > input[name='ipac_1a']:checked").val();
         console.log("opcao", opcao);
-        if(opcao == "sim"){
+        if(opcao == "true"){
             stack.push(currentSlide);
             $slider.slick('slickNext');
         }
@@ -178,3 +179,47 @@ $("select").change(function(){
     console.log("marcou");
     validaSlide(undefined, $slider.slick("slickCurrentSlide"), $slider.slick("slickCurrentSlide")+1);
 })
+
+
+function Respostas(){
+    this.ipac_1a = getByName("ipac_1a");
+    this.ipac_1b = getByName("ipac_1b");
+    this.ipac_1c = getBySelect("ipac_1c");
+    this.ipac_1d = getByName("ipac_1d");
+    this.ipac_1e = getBySelect("ipac_1e");
+    this.ipac_1f = getByName("ipac_1f");
+    this.ipac_1g = getBySelect("ipac_1g");
+
+    this.ipac_2a = getByName("ipac_2a");
+    this.ipac_2b = getBySelect("ipac_2b");
+    this.ipac_2c = getByName("ipac_2c");
+    this.ipac_2d = getBySelect("ipac_2d");
+    this.ipac_2e = getByName("ipac_2e");
+    this.ipac_2f = getBySelect("ipac_2f");
+
+    this.ipac_3a = getByName("ipac_3a");
+    this.ipac_3b = getBySelect("ipac_3b");
+    this.ipac_3c = getByName("ipac_3c");
+    this.ipac_3d = getBySelect("ipac_3d");
+    this.ipac_3e = getByName("ipac_3e");
+    this.ipac_3f = getBySelect("ipac_3f");
+
+    this.ipac_4a = getByName("ipac_4a");
+    this.ipac_4b = getBySelect("ipac_4b");
+    this.ipac_4c = getByName("ipac_4c");
+    this.ipac_4d = getBySelect("ipac_4d");
+    this.ipac_4e = getByName("ipac_4e");
+    this.ipac_4f = getBySelect("ipac_4f");
+
+    this.ipac_5a = getBySelect("ipac_5a");
+    this.ipac_5b = getBySelect("ipac_5b");
+
+}
+
+function getByName(name){
+    return $("input[name='" + name + "']:checked").val();
+}
+
+function getBySelect(id){
+    return $("#" + id + "_h").val() + ":" + $("#" + id + "_m").val();
+}
