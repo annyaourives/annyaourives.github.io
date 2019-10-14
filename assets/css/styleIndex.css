@@ -60,11 +60,11 @@ a:hover, a:focus{
 
 p{
     font-family: "Eurofurence";
-    font-size: 22px;
+    font-size: 26px;
 }
 
 /***********************************
-Navigation bar
+Menu
 ************************************/
 .navbar-default .navbar-brand {
     color: #5FCF80;
@@ -146,11 +146,19 @@ Navigation bar
 .mart20{
 	margin-top: 20px;
 }
+
 /***********************************
-Banner
+Banner de Entrada
 ************************************/
 .banner{
 	background: url('../images/idv/mapa.jpg') no-repeat center top;
+    background-size: cover;
+	min-height: 580px;
+    position: relative;
+}
+
+.banner2{
+	background: url('../images/index/ilheus.jpg') no-repeat center top;
     background-size: cover;
 	min-height: 580px;
     position: relative;
@@ -197,6 +205,19 @@ Banner
     left: 50%;
     margin-left: -12.5px;
     border-radius: 12px;
+}
+
+.count {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    float: center;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "EurofurenceB";
+    padding-bottom: 0px;
 }
 
 @-webkit-keyframes rotateplane {
@@ -263,11 +284,17 @@ Banner
     color: #D7263D;
 }
 .small-text{
-    font-size: 25px;
-    font-family: "Eurofurence";
+    font-size: 28px;
+    font-family: "EurofurenceB";
     color: #D7263D;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.text-intro{
+    font-size: 24px;
+    font-family: "Eurofurence";
+    color: #D7263D;
 }
 .quote .btn{
     background-color: #D7263D;
@@ -287,6 +314,7 @@ Banner
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 /***********************************
 Features
 ************************************/
@@ -295,10 +323,18 @@ h2{
 	padding-bottom: 15px;
 }
 .bottom-line{
-	width: 40px;
-	height: 5px;
-	background-color: #FFD275;
+	width: 80px;
+	height: 3px;
+    background-color: #FFD275;
+    padding-top: 0px;
 }
+
+.bottom-line2{
+	width: 150px;
+	height: 5px;
+	background-color: #D7263D;
+}
+
 .fea{
 	margin-top: 25px;
 }
@@ -324,12 +360,14 @@ h2{
 .heading p {
   text-align: left;
 }
+
 /***********************************
- Organisations
+EQUIPE
 ************************************/
-#organisations{
-    background-color: #74B3CE;
+#equipe{
+    background-color: #FFD275;
 }
+
 .orga-stru
 {
     background-color: #5FCF80;
@@ -375,61 +413,29 @@ p.det-p {
 #pricing{
     background: rgb(247, 247, 247);
 }
+
 /***********************************
-Cta
-************************************/
-#cta-2{
-    padding: 140px 0;
-}
-.cta-2-txt {
-    font-size: 24px;
-    padding-bottom: 15px;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 34px !important;
-}
-.cta-2-form input[type="email"] {
-    border: 0px solid #CCC;
-    padding: 13px 40px;
-    font-size: 18px;
-    color: #2b5d83;
-    font-weight: 100;
-    min-width: 280px;
-    margin-left: -4px;
-    margin-bottom: 2px;
-    border: 1px solid #5fcf80;
-    background-color: rgb(247, 247, 247);
-    border-radius: 30px 0px 0px 30px;
-}
-.cta-2-form-submit-btn {
-    font-size: 18px;
-    text-transform: capitalize;
-    color: #fff;
-    background-color: #5fcf80;
-    border: 2px solid #fff;
-    padding: 14px 30px;
-    margin-left: -4px;
-    transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    border-width: 1px 1px 1px 0px;
-    border-radius: 0px 30px 30px 0px;
-}
-/***********************************
-Work Shop
+Dados do projeto
 ************************************/
 #work-shop {
     background-color: rgb(247, 247, 247);
 }
+
 .service-box{
-    background: #fff;
+    background: #74B3CE;
     padding: 60px 30px 80px;
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-family: "Eurofurence";
+    padding-top: 0px;
 }
+
 .icon-box i {
-    color: #5FCF80;
+    color: #fff;
     font-size: 65px;
+    padding-top: 10px;
 }
 .ser-text {
     font-size: 24px;
@@ -437,54 +443,43 @@ Work Shop
 .icon-box, .icon-text {
     padding: 20px 0px 0px;
 }
+
 /***********************************
-Mentor Team
+Equipe
 ************************************/
 .pm-staff-profile-image{
   width: 150px;
   height: 150px;
-  background-color: #C6C6C6;
   border-radius: 50%;
   display: inline-block;
+  padding-bottom: 0px;
 }
+
 .pm-staff-profile-details {
     padding: 20px 20px;
 }
 .pm-staff-profile-name {
-    font-size: 24px;
+    font-family: "EurofurenceB";
+    font-size: 30px;
     text-transform: capitalize;
-    color: #2b5d83;
+    color: #D7263D;
+    padding-top: 0px;
 }
 .pm-staff-profile-title {
+    font-family: "Eurofurence";
+    font-size: 20px;
     text-transform: capitalize;
-    color: #4b4b4b;
-    font-weight: 500;
-    padding: 12px 0px;
+    color: #D7263D;
+    padding-top: 0px;
 }
 .pm-staff-profile-bio {
   text-transform: capitalize;
-  color: #4b4b4b;
+  color: #74B3CE;
   font-weight: 100;
 }
+
 /***********************************
-Testimonial
-************************************/
-#testimonial{
-    background-color: #111;
-}
-.bg-white{
-    background-color: #fff !important;
-}
-.text-comment{
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-}
-.text-par{
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-/***********************************
-Course
+Galeria
 ************************************/
 [class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
     background-color: #74B3CE;
@@ -493,52 +488,17 @@ Course
     background-color: #74B3CE;
     color: #fff;
 }
-/***********************************
-Price Table
-************************************/
-.price-table {
-    box-shadow: 0px 0px 1px 0px RGBA(0, 0, 0, 0.4);
-    position: relative;
-}
-.price-table .pricing-head {
-    background: #fff;
-    padding: 40px;
-    text-align: center;
-}
-.price-table .pricing-head h4 {
-    font-size: 22px;
-    color: #232c3b;
-    margin-top: 0px;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #232c3b;
-    padding-bottom: 20px;
-}
-.pricing-head .amount {
-    font-size: 60px;
-    font-weight: bold;
-}
-.pricing-head .curency {
-    display: inline-block;
-    position: relative;
-    top: -30px;
+
+.legenda{
     font-size: 20px;
 }
-.price-in {
-    background: #fff;
-    text-align: center;
-}
-.btn-bg {
-    border: 0px;
-    border-radius: 0px;
-    color: #fff !important;
-    padding: 20px 0px;
-    font-weight: bold !important;
-    font-size: 14px;
-    background-color: #5fcf80;
-}
+
 /***********************************
-Contact Us
+Contato
 ************************************/
+#contato{
+    background-color: #D7263D;
+}
 .contact form .form {
     width: 100%;
     height: auto;
@@ -547,14 +507,14 @@ Contact Us
     margin-bottom: 18px;
     color: #7f7f7f;
     letter-spacing: 0.5px;
+    font-family: "Eurofurence";
 }
 #contact .form-control {
     background: #fafafa;
-    border: 1px solid rgba(119, 81, 81, 0.34);
+    border: 1px solid rgba(211, 97, 53, 0.34);
     width: 100%;
 	margin-bottom: 15px;
-    border-radius: 20px;
-
+    border-radius: 30px;
 }
 .textarea {
     height: 228px;
@@ -599,6 +559,7 @@ Contact Us
 #sendmessage.show, #errormessage.show, .show {
 	display:block;
 }
+
 /***********************************
 Footer
 ************************************/
@@ -620,7 +581,7 @@ Footer
 .footer .form-control {
     border-radius: 30px;
     border: none;
-    background: rgba(255,255,255,.1);
+    background: rgba(211, 97, 53,.1);
     padding-left: 30px;
     color: #e5e6e7;
     margin-bottom: 0;
@@ -712,13 +673,15 @@ Footer
     padding: 10px 20px;
 }
 .light-form-button{
-    background: #5fcf80;
-    border-radius: 20px;
+    background: #FFD275;
+    font-size: 30px;
+    font-family: "EurofurenceB";
+    border-radius: 30px;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
     padding: 10px 10px;
     margin-bottom: 15px;
-    color: #fff;: #fafafa;
+    color: #D7263D;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
     margin-bottom: 15px;
@@ -726,6 +689,7 @@ Footer
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .btn-green, .btn-green:hover{
     background-color: #5fcf80;
     color: #fff;
@@ -753,6 +717,15 @@ Footer
     font-size: 35px;
     font-family: "EurofurenceB";
     color: #FFD275;
+    padding-bottom: 0px;
+}
+
+.tituloAm{
+    font-size: 35px;
+    font-family: "EurofurenceB";
+    color: #D7263D;
+    padding-bottom: 0px;
+    align-items: center;
 }
 
 .text-white{
@@ -763,7 +736,8 @@ Footer
 
 .img-fluid{
     width: 15%;
-	height: auto;
+    height: auto;
+    margin: 10px;
 }
 
 
@@ -809,9 +783,7 @@ Responsive media queries
     .big-text {
     font-size: 30px;
     }
-    .small-text {
-    font-size: 14px;
-    }
+
     .intro-para {
     font-size: 30px;
     }

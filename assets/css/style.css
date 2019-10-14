@@ -1453,7 +1453,17 @@ label{
 }
 
 input[type=radio] {
-    width: 20px;;
+    width: 20px;
     height: 25px;
+}
+
+.tests{
+    color: #FCC351;
+    font-size: 30px;
+}
+
+.spc{
+    width: 100px;
+    height: 20px;
 }
 
