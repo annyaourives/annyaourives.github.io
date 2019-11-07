@@ -104,6 +104,10 @@ section { overflow: hidden; }
     cursor: not-allowed;
 }
 
+.text-white{
+    margin-top: 20px;
+}
+
 /*bacground color*/
 .lightbg {
     background-color: #f2f2f2;
@@ -316,6 +320,14 @@ form {
     margin-top: 0px;
 }
 
+.line{
+    height: 3px;
+    clear: both;
+    overflow: hidden;
+    background-color: #D7263D;
+    margin-top: 20px;
+}
+
 /*
 Section
 */
@@ -401,12 +413,29 @@ Button
     border:1px solid;
     border-color: #fff;
     margin-right: 0px;
+    border-radius: 30px;
 }
 .btn-primary:hover{
     background-color: #eee;
     border-color: #eee;
     color:#74B3CE;
 }
+
+.btn-primaryD{
+    color: #fff;
+    font-size: 20px;
+    background-color: #74B3CE;
+    border:1px solid;
+    border-color: #fff;
+    margin-right: 0px;
+    border-radius: 30px;
+}
+.btn-primaryD:hover{
+    background-color: #eee;
+    border-color: #eee;
+    color:#74B3CE;
+}
+
 
 .btn-default{
     color: #fff;
@@ -696,6 +725,14 @@ textarea::-ms-input-placeholder{
     padding-top: 5px;
 }
 
+.culmn .tituloSessao2 h1{
+    text-align: center;
+    font-family: 'EurofurenceB';
+    font-size: 40px;
+    color: #FCC351;
+    padding-top: 5px;
+}
+
 .culmn .tituloSessao h4{
     text-align: center;
     font-family: "Eurofurence";
@@ -882,6 +919,10 @@ Nav Menu style
 	height: auto;
 }
 
+.navbar-header{
+    align-items: center;
+}
+
 
 
 
@@ -938,6 +979,24 @@ Home Section style
 }
 .main_home .slick-dots{
     bottom: -5px;
+}
+
+.homeT{
+    background-color: #FCC351;
+    background-size: cover;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width:100%;
+}
+
+.homeD{
+    background-color: #74B3CE;
+    background-size: cover;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:100%;
 }
 
 .work_container .slick-arrow ,
@@ -1398,6 +1457,14 @@ li a{
     margin-right: auto;
 }
 
+.svg5{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-left: 50%;
+}
+
 .botaum {
     align-items: center;
 }
@@ -1465,5 +1532,44 @@ input[type=radio] {
 .spc{
     width: 100px;
     height: 20px;
+}
+
+.img-fluid{
+    width: 20%;
+    height: auto;
+    margin: 10px;
+}
+
+.pSB{
+    color: #fff;
+    font-size: 24px;
+}
+
+.pCH{
+    font-family: 'EurofurenceB';
+    color: #D7263D;
+    font-size: 30px;
+}
+
+.pTit{
+    font-family: 'EurofurenceB';
+    color: #fff;
+    font-size: 24px;
+}
+
+.bottom-line{
+	width: 800px;
+	height: 3px;
+    background-color: #FFD275;
+    padding-top: 0px;
+    border-radius: 15px;
+}
+
+.bottom-line1{
+	width: 100px;
+	height: 1px;
+    background-color: #D7263D;
+    padding-top: 0px;
+    border-radius: 15px;
 }
 
