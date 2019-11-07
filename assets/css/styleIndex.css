@@ -512,7 +512,7 @@ Equipe
 }
 .pm-staff-profile-name {
     font-family: "EurofurenceB";
-    font-size: 25px;
+    font-size: 20px;
     text-transform: capitalize;
     color: #D7263D;
     margin: 0px;
@@ -800,6 +800,10 @@ Footer
     width: 15%;
     height: auto;
     margin: 10px;
+}
+
+.centra{
+    margin: 50%;
 }
 
 
