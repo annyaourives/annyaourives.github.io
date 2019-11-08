@@ -222,6 +222,26 @@ Author URI: http://www.xpeedstudio.com
         padding-bottom: 5%;
     }
 
+    .col-auto {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .form-control01{
+        width: 90%;
+    }
+
+    /*.spcNL{
+        display: flex;
+        width: 100px;
+        height: 20px;
+    }*/
+
+    .form-check-label{
+        font-size: 20px;
+    }
+
     .svg4{
         width: 70%;
         height: auto;
@@ -229,6 +249,39 @@ Author URI: http://www.xpeedstudio.com
         margin-left: auto;
         margin-right: auto;
     }
+
+    .svg5{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .culmn .tituloSessao h1{
+        font-size: 32px;
+    }
+
+    .culmn .tituloSessao2 h1{
+        font-size: 32px;
+    }
+
+    .pSB{
+        font-size: 20px;
+    }
+
+    .pTit{
+        font-size: 22px;
+    }
+
+    .svg2{
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 320px) {

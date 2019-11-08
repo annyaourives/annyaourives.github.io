@@ -1573,3 +1573,7 @@ input[type=radio] {
     border-radius: 15px;
 }
 
+.spcNL{
+    display: none;
+}
+

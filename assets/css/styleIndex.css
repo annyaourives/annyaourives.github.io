@@ -320,9 +320,6 @@ Banner de Entrada
   transition: all 0.3s ease-in-out;
 }
 
-.quot{
-    margin: 0px;
-}
 .quot .btn{
     border-radius: 25px;
     font-size: 30px;
@@ -826,6 +823,11 @@ Responsive media queries
     .price-table .pricing-head h4 {
     font-size: 18px;
     }
+
+    .svg{
+        width: 80%;
+        height: auto;
+    }
 }
 @media (min-width: 451px) and (max-width: 768px) {
     .ser-text {
@@ -840,6 +842,11 @@ Responsive media queries
     }
     .price-table .pricing-head h4 {
     font-size: 18px;
+    }
+
+    .svg{
+        width: 80%;
+        height: auto;
     }
 }
 @media (min-width: 20px) and (max-width: 450px) {
@@ -908,5 +915,79 @@ Responsive media queries
     }
     .navbar-default .navbar-nav > li > a{
         text-align: center;
+        font-size: 16px;
+    }
+
+    .svg{
+        width: 40%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    .navbar-Menu{
+        float: left;
+    }
+
+    .navbar-default .navbar-nav > li{
+        float:left; 
+        width: 80px; 
+        padding-left: 5%;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .spc4{
+        width: 100px;
+        height: 20px;
+    }
+
+    .text-intro{
+        font-size: 18px;
+    }
+
+    .big-text{
+        font-size: 40px;
+    }
+
+    .navbar-default .navbar-nav .btn-trial{
+        display: none; 
+    }
+
+    .bottom-line4{
+        margin-top: 0px;
+    }
+
+    .banner2{
+        background-size: cover;
+        min-height: 180px;
+    }
+
+    .col-md-6 p{
+        font-size: 18px;
+    }
+
+    .col-lg-12 .small-text{
+        font-size: 18px;
+    }
+
+    .col-lg-12 p{
+        font-size: 18px;
+    }
+
+    .pm-staff-profile-image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .container .text-center .pm-staff-profile-name{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .header-section .legCont{
+        font-size: 18px;
     }
 }
