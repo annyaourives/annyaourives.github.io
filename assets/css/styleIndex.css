@@ -651,6 +651,11 @@ Footer
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
+
+.footer .social-links li a:hover{
+    color:#fff;
+}
+
 .footer .mc-trial {
     margin: 20px 0;
 }
