@@ -28,9 +28,69 @@ Author URI: http://www.xpeedstudio.com
     }
 
     .home_text {
-        width: 50%;
-        vertical-align: center;
-        padding-left: 50%;
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .col-auto {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .form-control01{
+        width: 90%;
+    }
+
+    /*.spcNL{
+        display: flex;
+        width: 100px;
+        height: 20px;
+    }*/
+
+    .form-check-label{
+        font-size: 20px;
+    }
+
+    .svg4{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .svg5{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .culmn .tituloSessao h1{
+        font-size: 32px;
+    }
+
+    .culmn .tituloSessao2 h1{
+        font-size: 32px;
+    }
+
+    .pSB{
+        font-size: 20px;
+    }
+
+    .pTit{
+        font-size: 22px;
+    }
+
+    .svg2{
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
     }
 
 }
@@ -88,8 +148,69 @@ Author URI: http://www.xpeedstudio.com
     }
 
     .home_text {
-        width: 50%;
-        padding-left: 50%;
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .col-auto {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .form-control01{
+        width: 90%;
+    }
+
+    /*.spcNL{
+        display: flex;
+        width: 100px;
+        height: 20px;
+    }*/
+
+    .form-check-label{
+        font-size: 20px;
+    }
+
+    .svg4{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .svg5{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .culmn .tituloSessao h1{
+        font-size: 32px;
+    }
+
+    .culmn .tituloSessao2 h1{
+        font-size: 32px;
+    }
+
+    .pSB{
+        font-size: 20px;
+    }
+
+    .pTit{
+        font-size: 22px;
+    }
+
+    .svg2{
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
     }
 
 }
@@ -155,8 +276,69 @@ Author URI: http://www.xpeedstudio.com
     }
 
     .home_text {
-        width: 50%;
-        padding-left: 50%;
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .col-auto {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .form-control01{
+        width: 90%;
+    }
+
+    /*.spcNL{
+        display: flex;
+        width: 100px;
+        height: 20px;
+    }*/
+
+    .form-check-label{
+        font-size: 20px;
+    }
+
+    .svg4{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .svg5{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .culmn .tituloSessao h1{
+        font-size: 32px;
+    }
+
+    .culmn .tituloSessao2 h1{
+        font-size: 32px;
+    }
+
+    .pSB{
+        font-size: 20px;
+    }
+
+    .pTit{
+        font-size: 22px;
+    }
+
+    .svg2{
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
     }
 
 }
@@ -192,9 +374,70 @@ Author URI: http://www.xpeedstudio.com
         text-align: center; 
     }
 
-    .home_text{
-        width: 50%;
-        padding-left: 50%;
+    .home_text {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .col-auto {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .form-control01{
+        width: 90%;
+    }
+
+    /*.spcNL{
+        display: flex;
+        width: 100px;
+        height: 20px;
+    }*/
+
+    .form-check-label{
+        font-size: 20px;
+    }
+
+    .svg4{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .svg5{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .culmn .tituloSessao h1{
+        font-size: 32px;
+    }
+
+    .culmn .tituloSessao2 h1{
+        font-size: 32px;
+    }
+
+    .pSB{
+        font-size: 20px;
+    }
+
+    .pTit{
+        font-size: 22px;
+    }
+
+    .svg2{
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
     }
 }
 
@@ -305,9 +548,70 @@ Author URI: http://www.xpeedstudio.com
         text-align: center; 
     }
 
-    .home_text {    
-        width: 80%;
-        padding-left: 5%;
+    .home_text {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .col-auto {
+        width: 90%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .form-control01{
+        width: 90%;
+    }
+
+    /*.spcNL{
+        display: flex;
+        width: 100px;
+        height: 20px;
+    }*/
+
+    .form-check-label{
+        font-size: 20px;
+    }
+
+    .svg4{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .svg5{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .culmn .tituloSessao h1{
+        font-size: 32px;
+    }
+
+    .culmn .tituloSessao2 h1{
+        font-size: 32px;
+    }
+
+    .pSB{
+        font-size: 20px;
+    }
+
+    .pTit{
+        font-size: 22px;
+    }
+
+    .svg2{
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
     }
 }
 
